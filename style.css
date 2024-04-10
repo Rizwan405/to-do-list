@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Reddit Mono", monospace;
+  background-color: #e6c7cf;
+  color: #5c5053;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent {
+  width: 550px;
+  max-width: 550px;
+  min-height: 500px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.heading {
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.inputs {
+  /* border: 1px solid #5c5053; */
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+}
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  background-color: #eceef0;
+  width: 85%;
+  font-size: 24px;
+}
+input::placeholder {
+  font-size: 24px;
+  font-family: inherit;
+  color: #5c5053;
+}
+.submit-button {
+  outline: none;
+  border: none;
+  background-color: #eb5e28;
+  color: #fff;
+  font-family: inherit;
+  font-size: 24px;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transform: translateX(-22px);
+}
+.main-content {
+  margin-top: 10px;
+  padding: 20px 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.item p {
+  font-size: 20px;
+}
+
+.item-button {
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+.item-button:hover,
+.item-button:active {
+  cursor: pointer;
+  color: red;
+}
+.cross {
+  text-decoration: line-through;
+}
